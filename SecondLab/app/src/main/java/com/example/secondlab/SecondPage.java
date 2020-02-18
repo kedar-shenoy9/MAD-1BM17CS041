@@ -16,12 +16,15 @@ public class SecondPage extends AppCompatActivity {
         Intent i = getIntent();
         String nameValue = i.getStringExtra("username");
         String usnValue = i.getStringExtra("usn");
+        String depValue = i.getStringExtra("dep");
 
         TextView nameField = (TextView) findViewById(R.id.textView);
         TextView usnField = (TextView) findViewById(R.id.textView2);
+        TextView depField = (TextView) findViewById(R.id.textView4);
 
         nameField.setText(nameValue);
         usnField.setText(usnValue);
+        depField.setText(depValue);
 
     }
 
